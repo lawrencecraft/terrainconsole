@@ -9,6 +9,7 @@ import (
 )
 
 func main() {
+	log.SetLevel(log.DebugLevel)
 	roughness := flag.Float64("roughness", 1.0, "Between 0 and 1. Roughness of the generated image")
 	sizeX := flag.Int("x", 1025, "X value of the generated image")
 	sizeY := flag.Int("y", 1025, "Y value of the generated image")
